@@ -55,6 +55,79 @@
                 </div>
             </div>
         </div>
+        
+        <div class="row mb-3">
+          <div class="card">
+            <div class="card-header CabeceraCarta text-center">
+              <h2>Descripción de características avanzadas como modelos/plataformas no explicados en clase, funciones avanzadas de módulos, técnicas para mitigar sobrecargas, aspectos desafiantes de la implementación...</h2>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row  "> <!-- formado por x filas que contienen grupos de 3 destinos los cuales se muestran usando el formato card ubicados dentro de columnas -->
+          <div class="col-md-12 pb-4 d-flex">
+              <div class="card" >
+                <div class="card-header CabeceraCarta">
+                  <h5>Características avanzadas como modelos/plataformas:</h5>
+                </div>
+                  <div class="card-body">
+                    <p class="card-text">Como ya hemos puesto en el punto 5, para poder llevar a cabo un mejor análisis de nuestro proyecto, hemos empleado la librería PANDAS que nos proporciona python para poder procesar datos en formato csv de una manera sencilla. Además, también hemos empleado matplotlib, que es otra librería que nos proporciona python la cual nos permite poder generar gráficas de una manera sencilla lo que nos ha facilitado el poder sacar las conclusiones.
+                    </p>
+                    <p class="card-text">En nuestra implementación, hemos empleado Pandas como un complemento de Spark pero en ningún caso hemos usado Pandas como sustituto de Spark, es decir, hemos utilizado Pandas como otra manera de analizar los datos ya procesados por Spark. Pandas es una librería de python que no incluye la capacidad de procesado para grandes datos que si nos proporciona Spark. Además tampoco proporciona escalabilidad y solo emplea una sola máquina.  Es por eso que hemos utilizado este recurso solamente para realizar pequeñas operaciones, (como sort_values() para ordenar las columnas en el orden que quisiéramos o como dropna() para eliminar filas defectuosas del resultado de Spark), sobre conjuntos de datos muy pequeños resultantes de haber aplicado previamente un trabajo de spark. </p>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row  "> <!-- formado por x filas que contienen grupos de 3 destinos los cuales se muestran usando el formato card ubicados dentro de columnas -->
+        <div class="col-md-12 pb-4 d-flex">
+            <div class="card" >
+              <div class="card-header CabeceraCarta">
+                <h5>Funciones avanzadas de módulos:</h5>
+              </div>
+                <div class="card-body">
+                  <p class="card-text">Nuevas funciones de spark que hemos aprendido gracias a la realización del proyecto</p>
+                  <p class="card-text">-La función withColumn que sirve para añadir una nueva columna al dataFrame existente. Además, a la hora de poder extraer correctamente las calles del archivo csv, utilizamos la función concat_ws que hace que la nueva columna sea la concatenación de dos strings</p>
+                  <p class="card-text"># Divide el campo 'Block' por espacios y selecciona los elementos 2 y 3<br/>
+                    crime_df = crime_df.withColumn("BlockArray", split(col("Block"), " "))<br/>
+                    crime_df = crime_df.withColumn("Street", concat_ws(" ", col("BlockArray")[2], col("BlockArray")[3]))
+                    </p>
+                  <p class="card-text">-La función to_timestamp que nos permite transformar la fecha que viene dada en el csv para poder extraer los datos que nosotros queremos
+                  </p>
+                  <p class="card-text"># Convierte la columna 'Date' al formato de fecha y hora <br/>
+
+                    df = df.withColumn("Timestamp", to_timestamp(df["Date"], "MM/dd/yyyy hh:mm:ss a"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row  "> <!-- formado por x filas que contienen grupos de 3 destinos los cuales se muestran usando el formato card ubicados dentro de columnas -->
+      <div class="col-md-12 pb-4 d-flex">
+          <div class="card" >
+            <div class="card-header CabeceraCarta">
+              <h5>Tecnicas pasa mitigar gastos incecesarios:</h5>
+            </div>
+              <div class="card-body">
+                <p class="card-text">Para evitar sobrecargas, las técnicas que se pueden emplear es llevar a cabo una paralelización del procesamiento, es decir dividir tareas grandes en unidades más pequeñas y procesarlas a la vez para aprovechar el procesamiento distribuido.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row  "> <!-- formado por x filas que contienen grupos de 3 destinos los cuales se muestran usando el formato card ubicados dentro de columnas -->
+    <div class="col-md-12 pb-4 d-flex">
+        <div class="card" >
+          <div class="card-header CabeceraCarta">
+            <h5>Desafios a la hora de la implementación</h5>
+          </div>
+            <div class="card-body">
+              <p class="card-text">Como una de los aspectos más complicados a los que nos hemos tenido que enfrentar cuando realizamos el proyecto, ha sido la ejecución de nuestros scripts en el Cloud, esto se debe a que no éramos conscientes de que la ruta del archivo de entrada debía de ser modificado para que el Cloud lo pudiera leer apropiadamente y no conseguimos hasta tarde y gracias a la ayuda del profesor descifrar el porqué todo los trabajos que estábamos creando daban error.</p>
+              <p class="card-text">Debido a este motivo, tuvimos que crear nuevos códigos para que el usuario pudiera poner la ruta del archivo tanto de entrada como de salida, es decir, tuvimos que utilizar el módulo sys de Python y reemplazar en las instrucciones en las que leíamos y escribíamos en los csv la ruta en local por sys.argv[1] y sys.argv[2] respectivamente para que la instrucción ___ no diera error.</p>
+            </div>
+        </div>
+    </div>
+</div>
    </section>
 
    <footer> <!--Contenedor encargado de almacenar el Footer donde aparecera la información general de la pagina  -->
