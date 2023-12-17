@@ -41,7 +41,7 @@
 
 body {
     /* Establecer la imagen de fondo */
-    background-image: url('/webPage/images/resultadosfondo.jpg');
+    background-image: url('../images/resultadosfondo.jpg');
   
     /* Ajustar la forma en que la imagen se muestra en el fondo */
     background-size: cover; /* Cubre todo el área del elemento */
