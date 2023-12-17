@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilosAspectosTecnicos.css">
+    <link rel="shortcut icon" href="images/logo.png">
+    <title>CrimesOfChicago</title>
+</head>
+<body class="fondo">
+    <header class="container fondocabecera justify-content-center">  <!-- Aqui comienza el contenedor que contiene el logo y el texto de la cabecera  -->
+        <div class="row ">  <!--  Esta formado por 1 fila que contiene 1 columna de tamaño 2 para el logo y una de tamaño 8 para el texto  --> 
+            <div class="col-sm-2 ">
+                <img src="images/logo.png" alt="Icono Página no cargado" width="50" height="60" class="d-flex align-content-center justify-content-center">
+            </div>
+            <div class="col-sm-8 ">
+                <h1 class="textoCabecera d-flex align-items-center justify-content-center ">Crimes Of Chicago</h1>
+            </div>
+            <div class="col-sm-2">
+              <a href="https://github.com/JorgeSierra22/Cloud-BigData.git"><img src="images/GitHub-logo.png" alt="Icono Página no cargado" width="50" height="60"
+                class="d-flex align-content-center justify-content-center">
+              </a>
+            </div>
+        </div>
+    </header>
+    <nav class="container justify-content-center"> <!-- Contenedor encargado de almacenar la barra de Herramientas -->
+      <div class="row barraDeHerramientas"> <!-- formado por 1 fila que contiene los 4 botones de opciones, el buscador y el boton de Buscar -->
+        <div class="col-md-3  text-center bordecolumnaCabecera"><a href=./index.html  target="_self" class="btn btn-lg botoncabecera" ><h5>Descripcion del Proyecto</h5></a></div> 
+        <div class="col-md-3  text-center bordecolumnaCabecera"><a href=./Resultados.html  target="_self" class="btn btn-lg botoncabecera" ><h5>Resultados del Proyecto</h5></a></div> 
+        <div class="col-md-2  text-center bordecolumnaCabecera"><a href=./Aspectostecnicos.html  target="_self" class="btn btn-lg botoncabecera" ><h5>Aspectos tecnicos</h5></a></div> 
+        <div class="col-md-4  text-center bordecolumnaCabecera"><a href=./Conclusiones.html  target="_self" class="btn btn-lg botoncabecera" ><h5>Objetivos Aprendizaje y Mejoras</h5></a></div> 
+    </div>
+  </nav>
+
+
+   <section class="container justify-content-center "> <!-- Contenedor encargado de almacenar la seccion donde apareceran los destinos disponibles -->
+    
+    
+    <div class="row  "> <!-- formado por x filas que contienen grupos de 3 destinos los cuales se muestran usando el formato card ubicados dentro de columnas -->
+            <div class="col-md-12 pb-4 d-flex">
+                <div class="card" >
+                  <div class="card-header CabeceraCarta">
+                    <h5>Descripción técnica de la aplicación, modelos de programación , plataforma e infraestructura</h5>
+                  </div>
+                    <div class="card-body">
+                      <h6 class="card-text">En cuanto a las herramientas e infraestructuras que hemos empleado para este proyecto, han sido las siguientes: </h6>
+                      <p class="card-text"> -Primero, hemos creado un repositorio de GitHub en el cual subiremos tanto los datasets como el código empleado y los análisis realizados.                    </p>
+                      <p class="card-text"> -Debido a la capacidad de github en contraposición de nuestros datasets, hemos tenido que subir los datos a una carpeta de Drive.</p>
+                      <p class="card-text"> -Además, hemos utilizado python como nuestro lenguaje de programación al igual que en los assignments.</p>
+                      <p class="card-text"> -Debido al tamaño de los datos, hemos utilizado tanto el modo local como Google Cloud para su almacenamiento y ejecución. En ambos, ha jugado un papel crucial Apache Spark por su capacidad de procesamiento y análisis de datos.</p>                      
+                      <p class="card-text"> -Para llevar a cabo el análisis de los csv obtenidos de aplicar Spark, hemos utilizado 2 librerías de python: Pandas y MatplotLib, que nos permiten el manejo de datos de un reducido tamaño y su fácil representación en gráficas.</p>       
+                      <p class="card-text"> -A la hora de representar los resultados obtenidos con respecto al rendimiento, utilizamos Excel.</p>       
+                      <p class="card-text"> -Finalmente hemos empleado html,css,bootstrap y js para crear la página web sobre nuestro proyecto.</p>       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="card">
+            <div class="card-header CabeceraCarta text-center">
+              <h2>Analisis de la eficiencia </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row  "> 
+          <div class="col-md-6 pb-4 d-flex">
+            <div class="card" >
+          <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicadores -->
+            <!-- Indicadores -->
+          <ol class="carousel-indicators">
+            <li data-bs-target="#carousel1" data-bs-slide-to="0" class="active"></li>
+             <li data-bs-target="#carousel1" data-bs-slide-to="1"></li>
+          </ol>
+      
+            <!-- Contenido del carrusel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="./images/graficocloud.png" alt="Imagen eficiencias cloud">
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="fondoGrisTexto"></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./images/graficolocal.png" alt="Imagen eficiencia big data">
+                <div class="carousel-caption d-none d-md-block">
+                  <p class = "fondoGrisTexto"></p>
+                </div>
+              </div>
+      
+              <!-- Agrega más elementos carousel-item según sea necesario -->
+            </div>
+          
+            <!-- Controles del carrusel -->
+            <a class="carousel-control-prev" href="#carousel2" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#carousel2" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>
+              </div>
+            </div>
+          <div class="col-md-6 pb-4 d-flex">
+              <div class="card" >
+                <div class="card-header CabeceraCarta">
+                  <h5>Analisis tecnico de la eficiencia</h5>
+                </div>
+                  <div class="card-body">
+                    <p class="card-text"> A la izquierda pordemos ver un carrusel que incluye tanto el grafico que muestra la eficiencia en local como en el cloud indicando tanto el numero de cores y nodos y luego mostrando el tiempo de ejecucion de los algoritmos en si mismo </p>              
+                    <p class="card-text"> Llegamos a la conclusion de que en el grafico que hace referencia a los datos obtenidos en local si que llegamos a apreciar  una mejora signoficativa en funcion del numero de nodos siendo esta de un 93% de mejora al pasar de un nodo a 4. mientras que en los resultados obtenidos de las ejecuciones en el cloud no obtenemos una mejora significativa de hecho vemos que hay casos en los que aunque realicemos un aumneto de las caracteristicas obtenemos peores tiempos de ejecución</p>              
+                  </div>
+              </div>
+          </div>
+          
+          </div>
+
+          <div class="row mb-3">
+            <div class="card">
+              <div class="card-header CabeceraCarta text-center">
+                <h2>Descripción de características avanzadas como modelos/plataformas no explicados en clase, funciones avanzadas de módulos, técnicas para mitigar sobrecargas, aspectos desafiantes de la implementación...</h2>
+              </div>
+            </div>
+          </div>
+
+
+
+
+   </section>
+
+   <footer> <!--Contenedor encargado de almacenar el Footer donde aparecera la información general de la pagina  -->
+    <div class="container justify-content-center"> 
+      <div class="row fondocabecera letrasFooter"> <!-- Esta formado por una fila en la que se almacenan las 3 columnas con informacion general   --> 
+        <div class="col d-flex">
+            <ul class="list-unstyled"> 
+              <li><h6 >Legal</h6></li> 
+              <li><a href=#  target="_blank" class="text-decoration-none letrasFooter">Privacidad</a></li> 
+              <li><a href=#  target="_blank" class="text-decoration-none letrasFooter">Seguridad</a></li> 
+              <li><a href=#  target="_blank" class="text-decoration-none letrasFooter" >Cookies</a></li> 
+            </ul>
+        </div >
+        <div class="col d-flex">
+          <ul class="list-unstyled">
+            <li><h6 class="font-weight-bold">Sobre Nosotros</h6></li> 
+            <li><a href=#  target="_blank" class="text-decoration-none letrasFooter" >Guias de Viajes</a></li> 
+            <li><a href=#  target="_blank" class="text-decoration-none letrasFooter">Preguntas</a></li> 
+            <li><a href=#  target="_blank" class="text-decoration-none letrasFooter">Afiliados</a></li> 
+          </ul>
+          
+      </div>
+      <div class="col d-flex">
+        <ul class="list-unstyled">
+          <li><h6 class="font-weight-bold">Redes Sociales</h6></li> 
+          <li><a href=https://www.instagram.com  target="_blank" class="text-decoration-none letrasFooter">Instagram</a></li> 
+          <li><a href=https://www.facebook.com target="_blank" class="text-decoration-none letrasFooter">Facebook</a></li> 
+          <li><a href=https://twitter.com target="_blank" class="text-decoration-none letrasFooter">Twitter</a></li> 
+        </ul>
+        </div>
+        </div>
+      </div>
+   </footer>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+   crossorigin="anonymous"></script>
+
+</body>
+</html>

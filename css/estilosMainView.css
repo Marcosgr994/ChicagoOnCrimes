@@ -1,0 +1,85 @@
+.barraDeHerramientas{  /*clase de la barra de herramientas, pone el fondo a morado oscuro, añade margenes y ordena los elementos con espacios equivalentes*/
+    list-style-type: none;
+    background-color: #6a91e5; 
+    padding: 10px;
+    justify-content: space-evenly !important;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.card-footer h6{/*modifica h6 en el footer para aumentar de tamaño el precio*/
+    display: inline-block;
+    font-size: 30px;
+}
+
+.card-footer{ /*pone el fonde del footer de las cartas en color blanco*/
+    background-color: white;
+}
+
+
+.bordecolumnaCabecera a:hover{ /*Hace que al pasar por encoima de los botnes de la barra de herraminetas estos cabien de color*/
+    background-color:  #6a91e5;
+    color: white;
+}
+
+.textoCabecera{ /*Cambia la fuente,tamaño y color de la letra de la cabecera*/
+   color: white;
+   font: 1em EB-garamont;
+   font-size: 40px;
+}
+
+.fondocabecera{ /*Hace que el fondo de la cabecera cambie de color*/
+    background-color: #3d4fb8;
+}
+
+.botonbuscar{/*Da color a los botones de buscar y les cambia la letra*/
+    background-color: #6a91e5;
+    color: white;
+    font: 1em EB-garamont;
+}
+
+
+body {
+    /* Establecer la imagen de fondo */
+    background-image: url('/webPage/images/chicagofondo.jpg');
+  
+    /* Ajustar la forma en que la imagen se muestra en el fondo */
+    background-size: cover; /* Cubre todo el área del elemento */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No se repite la imagen */
+  }
+
+.botonsabermas{  /*El boton de saber mas de las tarjetas tiene fondo morado oscuro, color blanco y fuente EB-garamont*/
+    background-color: #6a91e5;
+    color :white;
+    font: 1em EB-garamont;
+}
+
+.botoncabecera{ /*Los botones de la cabecera tiene fondo morado, de color blanco, fuente 40 EB-garamont*/
+    background-color: #6a91e5;
+    color: white;
+    font-size: 40px;
+    font: 1em EB-garamont;
+}
+
+.CabeceraCarta{ /*La fuente de la cabecera es EB-garamont y su color es morado oscuro*/
+    color:#6a91e5;
+    font: 1em EB-garamont;
+}
+
+.letrasFooter { /*Las letras del pie de pagina son blancas */
+    color:white;
+}
+
+.letrasFooter a:hover{ /*Cuando se pasa el raton por encima de un enlace del footer, cambia de color y se mueve a la derecha*/
+    color:rgba(255, 255, 255, 0.614);
+    padding-left: 5%;
+}
+
+.card:hover{ /*Cuando se pasa el raton por encima de una tarjeta aparece una sombra*/
+    box-shadow: 0px 0px 20px #6a91e5;
+}
+
+.card-img-top{ /*Elimina el radio de las imagenes de las tarjetas*/
+    border-radius: 0;
+}

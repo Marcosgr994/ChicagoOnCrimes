@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilosResultados.css">
+    <link rel="shortcut icon" href="images/logo.png">
+    <title>CrimesOfChicago</title>
+</head>
+<body class="fondo">
+    <header class="container fondocabecera justify-content-center">  <!-- Aqui comienza el contenedor que contiene el logo y el texto de la cabecera  -->
+        <div class="row ">  <!--  Esta formado por 1 fila que contiene 1 columna de tamaño 2 para el logo y una de tamaño 8 para el texto  --> 
+            <div class="col-sm-2 ">
+                <img src="images/logo.png" alt="Icono Página no cargado" width="50" height="60" class="d-flex align-content-center justify-content-center">
+            </div>
+            <div class="col-sm-8 ">
+                <h1 class="textoCabecera d-flex align-items-center justify-content-center ">Crimes Of Chicago</h1>
+            </div>
+            <div class="col-sm-2">
+              <a href="https://github.com/JorgeSierra22/Cloud-BigData.git"><img src="images/GitHub-logo.png" alt="Icono Página no cargado" width="50" height="60"
+                class="d-flex align-content-center justify-content-center">
+              </a>
+            </div>
+        </div>
+    </header>
+    <nav class="container justify-content-center"> <!-- Contenedor encargado de almacenar la barra de Herramientas -->
+        
+        <div class="row barraDeHerramientas"> <!-- formado por 1 fila que contiene los 4 botones para moverte por la pagina -->
+            <div class="col-md-3  text-center bordecolumnaCabecera"><a href=./index.html  target="_self" class="btn btn-lg botoncabecera" ><h5>Descripcion del Proyecto</h5></a></div> 
+            <div class="col-md-3  text-center bordecolumnaCabecera"><a href=./Resultados.html  target="_self" class="btn btn-lg botoncabecera" ><h5>Resultados del Proyecto</h5></a></div> 
+            <div class="col-md-3  text-center bordecolumnaCabecera"><a href=./Aspectostecnicos.html   target="_self" class="btn btn-lg botoncabecera" ><h5>Aspectos tecnicos</h5></a></div> 
+            <div class="col-md-3  text-center bordecolumnaCabecera"><a href=./Conclusiones.html  target="_self" class="btn btn-lg botoncabecera" ><h5>Objetivos Aprendizaje y Mejoras</h5></a></div> 
+        </div>
+    </nav>
+
+
+   <section class="container justify-content-center "> 
+
+      <div class="row mb-3">
+        <div class="card">
+          <div class="card-header CabeceraCarta text-center">
+            <h2>Analisis Horario</h2>
+          </div>
+        </div>
+      </div>
+
+        <div class="row  "> 
+          <div class="col-md-8 pb-4 d-flex">
+                <div class="card" >
+                  <div class="card-header CabeceraCarta">
+                    <h5>Analisis de la delictividad en funcion de las horas</h5>
+                  </div>
+                    <div class="card-body">
+                      <p class="card-text"> Primero con respecto a los resultados obtenidos de cuales son las horas en las que se producen mayores crímenes, gracias a esta gráfica podemos ver que los crímenes se concentran en la franja horaria comprendida entre las 18-21 horas a pesar de no ser el pico en cuanto a número, el pico se produce a las 12 de la noche. Esto nos hace ver que la mayoría de los crímenes en Chicago se producen en horas en las cuales la mayoría de la población está regresando de sus trabajos y por lo tanto hay una mayor actividad tanto en las calles, como en los restaurantes y el transporte, haciendo de estas 4 horas la oportunidad perfecta para llevar a cabo robos. </p>
+                      <p class="card-text"> Tambien podemos resaltar que durante las horas de madrugada a pesar de que podriamos pensar que al tratarse de un horario nocturno ocurririan mas delitos no es asi la tendencia si no que esteo transcurren en horarios diurnos nomalmente.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 pb-4 d-flex">
+                <div class="card" >
+                    <img class="card-img-top " src="images/ResultadosHoras.png" alt="Imagen Crimenes segun horas">
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="card">
+            <div class="card-header CabeceraCarta text-center">
+              <h2>Analisis Geográfico</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row  "> 
+            
+            <div class="col-md-6 pb-4 d-flex">
+                <div class="card" >
+                    <img class="card-img-top " src="images/Crimenesporcalle.png" alt="Imagen Crimenes segun calles">
+                </div>
+            </div>
+            <div class="col-md-6 pb-4 d-flex">
+                <div class="card" >
+                  <div class="card-header CabeceraCarta">
+                    <h5>Analisis calles con mas delitos por distrito</h5>
+                  </div>
+                    <div class="card-body">
+                      <p class="card-text"> En este gráfico se presenta la calle con la mayor incidencia delictiva en cada uno de los distritos de la ciudad de Chicago. Se observa que ciertas calles se extienden a lo largo de varios distritos y presentan un elevado índice de criminalidad. Esto se debe a que estas vías coinciden con algunas de las principales arterias de la ciudad.</p>
+                      <p class="card-text"> Podemos observar esta tendencia en calles como la State Street, la principal arteria de la ciudad de Chicago, Esta concentración de crímenes se relaciona directamente con la importancia y extensión de estas vías, que actúan como puntos críticos en la estadística delictiva de la ciudad. La State Street, famosa por su vitalidad comercial y cultural, alberga lugares emblemáticos como el Teatro Chicago, la Universidad DePaul y el Millennium Park, convirtiéndose así en un área de interés tanto para residentes como para visitantes, pero también requiriendo especial atención en términos de seguridad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row  "> 
+            <div class="col-md-7 pb-4 d-flex">
+                <div class="card" >
+                  <div class="card-header CabeceraCarta">
+                    <h5>Analisis de las calles las cuales han sido atendidas por más de una comisaría</h5>
+                  </div>
+                    <div class="card-body">
+                      <p class="card-text"> Se puede apreciar que hay varias calles las cuales han sido atendidas por más de una comisaría. Si tratamos de comprender la razón de que haya calles reptidas podemos ver lo siguiente: Centrandonos en las calles que aprecen en más una ocasión:</p>
+                      <p class="card-text"> Madison Street, una extensa vía que conecta el Este y Oeste de Chicago, alberga destacados puntos de interés como el United Center (para baloncesto y hockey), el Millennium Park con el Pabellón Jay Pritzker, el imponente Chase Tower de 60 pisos con oficinas de empresas prominentes, y el Civic Opera House, la principal ópera de la ciudad, entre otros edificios comerciales y residenciales.</p>
+                      <p class="card-text"> O'Hare Street destaca como la ubicación del Aeropuerto Internacional de Chicago O'Hare, uno de los más transitados del mundo, con millones de pasajeros nacionales e internacionales en 2022. Este importante punto de tránsito contribuye significativamente a la actividad de la ciudad.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 pb-4 d-flex">
+                <div class="card" >
+                    <img class="card-img-top " src="images/comisarias.png" alt="Imagen Crimenes segun horas">
+                </div>
+            </div>
+        </div>
+        
+        <div class="row  "> 
+            
+          <div class="col-md-6 pb-4 d-flex">
+              <div class="card" >
+                  <img class="card-img-top " src="images/distritoconmas crimenes por año.png" alt="Imagen Crimenes segun calles">
+              </div>
+          </div>
+          <div class="col-md-6 pb-4 d-flex">
+              <div class="card" >
+                <div class="card-header CabeceraCarta">
+                  <h5>Analisis del distrito con mas crimenes de forma anual</h5>
+                </div>
+                  <div class="card-body">
+                    <p class="card-text"> En este grafico de dispersion se muestra representada la tabla de la derecha representando segun el posicionamiento el año y la cantidad de crimenes y segun el color los diferentes distritos</p>
+                    <p class="card-text"> Al examinar de manera general la evolución de las tasas de criminalidad a lo largo del tiempo, se destaca inicialmente una tendencia a la disminución de los índices delictivos. No obstante, al profundizar en el análisis por distritos, se revelan patrones notables. En el período comprendido entre 2002 y 2012, el distrito 8 emerge como el área con mayor incidencia delictiva. Sin embargo, entre los años 2013 y 2021, se observa un cambio significativo, con el distrito 11 asumiendo el lamentable título de la zona más peligrosa. Curiosamente, durante los últimos dos años de la serie temporal analizada, el distrito 8 resurge como un foco preocupante de actividad delictiva, generando una dinámica de alternancia en la peligrosidad relativa entre estos dos distritos. </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="card">
+          <div class="card-header CabeceraCarta text-center">
+            <h2>Media Anual Por Distritos</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row  "> 
+            
+        <div class="col-md-4 pb-4 d-flex">
+            <div class="card" >
+                <img class="card-img-top " src="images/mediaanualdistritos.png" alt="Imagen Crimenes segun calles">
+            </div>
+        </div>
+        <div class="col-md-4 pb-4 d-flex">
+            <div class="card" >
+              <div class="card-header CabeceraCarta text-center">
+                <h5>  <-- Media delitos todos los años   </h5>
+                <h5> Media delitos años de pandemia -->    </h5>
+              </div>
+                <div class="card-body">
+                  <p class="card-text"> En estos graficos se muestra la media de crimenes acontecidos en cada distritos de forma anual, encontrando a la izquierda analizados los datos representativos de estos ultimos 23 años, mientras que a la derecha observamos los del año 2020 representativos del año de pandemia </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 pb-4 d-flex">
+          <div class="card" >
+              <img class="card-img-top " src="images/mediaanualpandemia.png" alt="Imagen Crimenes segun calles">
+          </div>
+      </div>
+    </div>
+
+    <div class="row  "> 
+            
+      <div class="col-md-6 pb-4 d-flex">
+          <div class="card" >
+              <img class="card-img-top " src="images/mediaanualDistritoscomparacion.png" alt="Imagen Crimenes segun calles">
+          </div>
+      </div>
+      <div class="col-md-6 pb-4 d-flex">
+          <div class="card" >
+            <div class="card-header CabeceraCarta text-center">
+              <h5>  Comparativa directa años de pandemia con la media total anual  </h5>
+            </div>
+              <div class="card-body">
+                <p class="card-text"> A la izquierda pordemos ver la disminucion de los delitos que se produjieron durante los años de la pandemia. Destacando entre ellos la reduccion producidaen el distrito 25 el cual podria haber visto reducida su tasa de criminalidad en hasta un 40%.</p>
+                <p class="card-text"> Como conclusión podemos ver que la Pandemia afecto a todos los temas de la vida de los Chicagüense incluido entre esto las tasas de delitos. En total podremos concluir que se vio una disminucion relativa de cerca del 25% con respecto a las estadisticas generales </p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+    <div class="row mb-3">
+      <div class="card">
+        <div class="card-header CabeceraCarta text-center">
+          <h2>Analisis Sobre Los Crimenes </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row  "> 
+      <div class="col-md-4 pb-4 d-flex">
+          <div class="card" >
+            <div class="card-header CabeceraCarta">
+              <h5>Top 5 crimenes mas cometidos durante los ultimos 23 años </h5>
+            </div>
+              <div class="card-body">
+                <p class="card-text"> En el presente gráfico, se exhiben los crímenes más recurrentes de cada año tras aplicar un filtro para identificar los cinco delitos con mayor incidencia. Una tendencia clara revela que delitos de menor gravedad, como robos y estacionar en doble fila, se mantienen como los más prevalentes a lo largo de los años analizados. Posteriormente, se destacan delitos vinculados con narcóticos o daños, seguidos, con una representación ligeramente menor, por ofensas, robos residenciales y asaltos. </p>
+                <p class="card-text">  Este panorama también refleja la tendencia a la baja en la criminalidad que hemos observado a lo largo de las dos últimas décadas, ahora manifestada específicamente en los delitos más comunes durante los últimos 23 años. Este análisis permite no solo identificar las categorías delictivas más recurrentes, sino también apreciar la evolución positiva en términos de seguridad ciudadana a lo largo del tiempo. </p>
+                 </div>
+          </div>
+      </div>
+      <div class="col-md-8 pb-4 d-flex">
+          <div class="card" >
+              <img class="card-img-top " src="images/top5crimes.png" alt="Imagen Crimenes segun horas">
+          </div>
+      </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="card">
+      <div class="card-header CabeceraCarta text-center">
+        <h2>Analisis Sobre los arrestos </h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="row  "> 
+    <div class="col-md-3 pb-4 d-flex">
+      <div class="card" >
+    <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicadores -->
+      <!-- Indicadores -->
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carousel1" data-bs-slide-to="0" class="active"></li>
+       <li data-bs-target="#carousel1" data-bs-slide-to="1"></li>
+    </ol>
+
+      <!-- Contenido del carrusel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="./images/arrestostodos.png" alt="Imagen Gran Vía no cargada">
+          <div class="carousel-caption d-none d-md-block">
+            <p class="fondoGrisTexto"></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./images/arrestosmenos100k.png" alt="Imagen Museo del Prado no cargada">
+          <div class="carousel-caption d-none d-md-block">
+            <p class = "fondoGrisTexto"></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./images/arrestostop5.png" alt="Imagen Museo del Prado no cargada">
+          <div class="carousel-caption d-none d-md-block">
+            <p class = "fondoGrisTexto"></p>
+          </div>
+        </div>
+
+        <!-- Agrega más elementos carousel-item según sea necesario -->
+      </div>
+    
+      <!-- Controles del carrusel -->
+      <a class="carousel-control-prev" href="#carousel1" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+      <a class="carousel-control-next" href="#carousel1" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+    </div>
+        </div>
+      </div>
+    <div class="col-md-3 pb-4 d-flex">
+        <div class="card" >
+          <div class="card-header CabeceraCarta">
+            <h5>Datos acerca de los arrestos que se producen en un crimen</h5>
+          </div>
+            <div class="card-body">
+              <p class="card-text"> A la izquierda vemos un carrusel que incluye los arrestos que se han producido en cada uno de los delitos y a la derecha tenemos el porcentaje de arrestos que se producen para cada tipo de delito</p>              
+              <p class="card-text"> Como dato recalcable vemos en el grafico de la derecha que los crimenes con mayor gravedad suelen ser resueltos en casi el 100% de los casos mientras que los pequeños no suelen ser resueltos o no conllevan un arresto</p>              
+            </div>
+        </div>
+    </div>
+    
+      <div class="col-md-6 pb-4 d-flex">
+        <div class="card" >
+            <img class="card-img-top " src="images/porcentajearrestospordelito.png" alt="Imagen Crimenes segun calles">
+        </div>
+    </div>
+
+
+    <div class="row mb-3">
+      <div class="card">
+        <div class="card-header CabeceraCarta text-center">
+          <h2>Anaisis de los delitos cada 5 años </h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row  "> 
+            
+      <div class="col-md-4 pb-4 d-flex">
+          <div class="card" >
+              <img class="card-img-top " src="images/distibucioncrimenes.png" alt="Imagen Crimenes segun calles">
+          </div>
+      </div>
+      <div class="col-md-8 pb-4 d-flex">
+          <div class="card" >
+            <div class="card-header CabeceraCarta">
+              <h5>Analisis de los delitos en intervalos de 5 años</h5>
+            </div>
+              <div class="card-body">
+                <p class="card-text"> En el grafico de la izquierda podemos ver un grafico circulas en el tenemos una clara comparacion de la reduccion de los delitos que se cometen anualmente en la ciudad de chicago</p>
+                <p class="card-text"> Al analizar detenidamente los gráficos que se presentan a continuación, se destaca de manera evidente la significativa disminución que afecta a todos los tipos de delitos. Entre los aspectos más notables, se encuentran los delitos asociados con narcóticos, los cuales han experimentado una reducción notable. Estos delitos, que superaban la cifra de 300,000 en la etapa inicial, han descendido drásticamente, ubicándose por debajo de los 80,000 en los últimos cinco años. Este descenso abrumador también se refleja en delitos de menor impacto, como los estacionamientos en batería o los robos. En consecuencia, se puede inferir que esta disminución en la cantidad de delitos de diversa magnitud podría estar vinculada al desempeño eficiente de los cuerpos de seguridad de la ciudad</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="row  "> 
+            
+    <div class="col-md-3 pb-4 d-flex">
+        <div class="card" >
+          <div class="card-header CabeceraCarta">
+            <h5>delitos 2001-2006</h5>
+          </div>
+            <img class="card-img-top " src="images/2001-2006.png" alt="Imagen Crimenes segun calles">
+        </div>
+    </div>
+    <div class="col-md-3 pb-4 d-flex">
+      <div class="card" >
+        <div class="card-header CabeceraCarta">
+          <h5>delitos 2007-2012</h5>
+        </div>
+          <img class="card-img-top " src="images/2007-2012.png" alt="Imagen Crimenes segun calles">
+      </div>
+  </div>
+  <div class="col-md-3 pb-4 d-flex">
+    <div class="card" >
+      <div class="card-header CabeceraCarta">
+        <h5>delitos 20013-2018</h5>
+      </div>
+        <img class="card-img-top " src="images/2013-2017.png" alt="Imagen Crimenes segun calles">
+    </div>
+</div>
+<div class="col-md-3 pb-4 d-flex">
+  <div class="card" >
+    <div class="card-header CabeceraCarta">
+      <h5>delitos 2019-2023</h5>
+    </div>
+      <img class="card-img-top " src="images/2018-2023.png" alt="Imagen Crimenes segun calles">
+  </div>
+</div>
+</div>
+
+      
+
+   </section>
+
+   <footer> <!--Contenedor encargado de almacenar el Footer donde aparecera la información general de la pagina  -->
+    <div class="container justify-content-center"> 
+      <div class="row fondocabecera letrasFooter"> <!-- Esta formado por una fila en la que se almacenan las 3 columnas con informacion general   --> 
+        <div class="col d-flex">
+            <ul class="list-unstyled"> 
+              <li><h6 >Legal</h6></li> 
+              <li><a href=#  target="_blank" class="text-decoration-none letrasFooter">Privacidad</a></li> 
+              <li><a href=#  target="_blank" class="text-decoration-none letrasFooter">Seguridad</a></li> 
+              <li><a href=#  target="_blank" class="text-decoration-none letrasFooter" >Cookies</a></li> 
+            </ul>
+        </div >
+        <div class="col d-flex">
+          <ul class="list-unstyled">
+            <li><h6 class="font-weight-bold">Sobre Nosotros</h6></li> 
+            <li><a href=#  target="_blank" class="text-decoration-none letrasFooter" >Guias de Viajes</a></li> 
+            <li><a href=#  target="_blank" class="text-decoration-none letrasFooter">Preguntas</a></li> 
+            <li><a href=#  target="_blank" class="text-decoration-none letrasFooter">Afiliados</a></li> 
+          </ul>
+          
+      </div>
+      <div class="col d-flex">
+        <ul class="list-unstyled">
+          <li><h6 class="font-weight-bold">Redes Sociales</h6></li> 
+          <li><a href=https://www.instagram.com  target="_blank" class="text-decoration-none letrasFooter">Instagram</a></li> 
+          <li><a href=https://www.facebook.com target="_blank" class="text-decoration-none letrasFooter">Facebook</a></li> 
+          <li><a href=https://twitter.com target="_blank" class="text-decoration-none letrasFooter">Twitter</a></li> 
+        </ul>
+        </div>
+        </div>
+      </div>
+   </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+   crossorigin="anonymous"></script>
+</body>
+</html>
