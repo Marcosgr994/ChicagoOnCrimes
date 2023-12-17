@@ -37,24 +37,6 @@
 
    <section class="container justify-content-center "> <!-- Contenedor encargado de almacenar la seccion donde apareceran los destinos disponibles -->
     
-    
-    <div class="row  "> <!-- formado por x filas que contienen grupos de 3 destinos los cuales se muestran usando el formato card ubicados dentro de columnas -->
-            <div class="col-md-12 pb-4 d-flex">
-                <div class="card" >
-                  <div class="card-header CabeceraCarta">
-                    <h5>Conclusiones</h5>
-                  </div>
-                    <div class="card-body">
-                        <p class="card-text">Gracias a nuestro análisis, el objetivo que nos gustaría alcanzar sería poder compartir estos datos con la policía de Chicago para poder ayudarlos a reforzar los puntos claves de la ciudad, las calles más peligrosas que ya hemos explicado, reforzar el personal disponible en las franjas horarias que hemos destacado como las más problemáticas.
-
-                            Además, Chicago, a pesar de ser la tercera ciudad con más población de Estados Unidos, es la ciudad de EEUU con mayor índice de criminalidad del país, entonces todos estos resultados son muy representativos y tienen una gran validez, hasta incluso se podrían llegar a considerar como el ejemplo más extremo y más completo para llevar a cabo conclusiones generales sobre las criminalidad, y que puedan ser extrapoladas para otras ciudades tanto con mayor población como con una población más reducida.  
-                            Como factores a mejorar, nos hemos dado cuenta al realizar el análisis de que en ningún momento la policía de Chicago registra el género del infractor o delincuente ni tampoco la franja de edad en la que se encuentra y esto ha imposibilitado el poder llevar a cabo un análisis social sobre la población en Chicago.
-                            Para el futuro, sería interesante llevar a cabo este análisis en diferentes ciudades de diferentes países como por ejemplo Moscú, Pekín, Berlín para ver cómo afectan las diferentes culturas al índice de criminalidad y si las conclusiones obtenidas para Chicago serían verdaderamente válidas en otros países.
-                            </p>
-                      </div>
-                </div>
-            </div>
-        </div>
         
         <div class="row mb-3">
           <div class="card">
@@ -122,12 +104,63 @@
             <h5>Desafios a la hora de la implementación</h5>
           </div>
             <div class="card-body">
-              <p class="card-text">Como una de los aspectos más complicados a los que nos hemos tenido que enfrentar cuando realizamos el proyecto, ha sido la ejecución de nuestros scripts en el Cloud, esto se debe a que no éramos conscientes de que la ruta del archivo de entrada debía de ser modificado para que el Cloud lo pudiera leer apropiadamente y no conseguimos hasta tarde y gracias a la ayuda del profesor descifrar el porqué todo los trabajos que estábamos creando daban error.</p>
+              <p class="card-text">Como una de los aspectos más complicados a los que nos hemos tenido que enfrentar cuando realizamos el proyecto, ha sido la ejecución de nuestros scripts en el Cloud, esto se debe a que no éramos conscientes de que la ruta del archivo de entrada debía de ser modificado para que el Cloud lo pudiera leer apropiadamente y no conseguimos hasta tarde y gracias a la ayuda del profesor descifrar el porqué todos los trabajos que estábamos creando daban error.</p>
               <p class="card-text">Debido a este motivo, tuvimos que crear nuevos códigos para que el usuario pudiera poner la ruta del archivo tanto de entrada como de salida, es decir, tuvimos que utilizar el módulo sys de Python y reemplazar en las instrucciones en las que leíamos y escribíamos en los csv la ruta en local por sys.argv[1] y sys.argv[2] respectivamente para que la instrucción ___ no diera error.</p>
             </div>
         </div>
     </div>
 </div>
+
+
+<div class="row mb-3">
+  <div class="card">
+    <div class="card-header CabeceraCarta text-center">
+      <h2>Conclusiones</h2>
+    </div>
+  </div>
+</div>
+
+<div class="row mb-3">
+  <div class="col-md-6 pb-4 d-flex">
+    <div class="card" >
+      <div class="card-header CabeceraCarta">
+        <h5>Logros</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">Gracias a nuestro análisis, el objetivo que queríamos alcanzar era poder compartir estos datos con la policía de Chicago para poder ayudarlos a reforzar los puntos claves de la ciudad, las calles más peligrosas que ya hemos explicado y reforzar el personal disponible en las franjas horarias que hemos destacado como las más problemáticas. Tras la realización de todo el proyecto, podemos decir que hemos logrado profundizar en todos los temas que queríamos observar y que los resultados logrados sí que servirían para ayudar tanto a la policía como a los ciudadanos a mejorar la seguridad en las calles de Chicago.
+
+          <br/> <br/> Además, Chicago, a pesar de ser la tercera ciudad con más población de Estados Unidos, es la ciudad de EEUU con mayor índice de criminalidad del país, entonces todos estos resultados son muy representativos y tienen una gran validez, hasta incluso se podrían llegar a considerar como el ejemplo más extremo y más completo para llevar a cabo conclusiones generales sobre las criminalidad, y que puedan ser extrapoladas para otras ciudades tanto con mayor población como con una población más reducida.  
+          </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 pb-4 d-flex">
+    <div class="card" >
+      <div class="card-header CabeceraCarta">
+        <h5>Mejoras</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">Como factores a mejorar, nos hemos dado cuenta al realizar el análisis de que en ningún momento la policía de Chicago registra el género del infractor o delincuente ni tampoco la franja de edad en la que se encuentra y esto ha imposibilitado el poder llevar a cabo un análisis social sobre la población en Chicago. 
+          <br/> <br/>Creemos que no sería algo difícil de añadir ya que en las propias denuncias para encontrar a los sospechosos debe de aparecer dicha información.  Y añadiría un plus muy interesante a las conclusiones obtenidas ,como por ejemplo, sobre cuáles pueden ser las edades más propensas a cometer ciertos tipos de delitos.
+          </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 pb-4 d-flex">
+    <div class="card" >
+      <div class="card-header CabeceraCarta">
+        <h5>Trabajo Futuro</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">Para el futuro, sería interesante llevar a cabo este análisis en diferentes ciudades de diferentes países de distintos continentes como por ejemplo Sidney, Pekín, Berlín, Lagos… para ver cómo afectan las diferentes culturas al índice de criminalidad y si las conclusiones obtenidas para Chicago serían verdaderamente válidas en otros países. 
+         <br/>  <br/>Además, todos estos scripts se podrían seguir utilizando para años venideros, en la propia ciudad de Chicago, por lo que continuar con el estudio para próximos años comprobando si todas las tendencias mencionadas se mantienen sería otro de los objetivos a lograr en el futuro.
+          </p>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+
    </section>
 
    <footer> <!--Contenedor encargado de almacenar el Footer donde aparecera la información general de la pagina  -->
