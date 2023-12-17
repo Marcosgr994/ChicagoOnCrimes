@@ -10,21 +10,24 @@
     <title>CrimesOfChicago</title>
 </head>
 <body class="fondo">
-    <header class="container fondocabecera justify-content-center">  <!-- Aqui comienza el contenedor que contiene el logo y el texto de la cabecera  -->
-        <div class="row ">  <!--  Esta formado por 1 fila que contiene 1 columna de tamaño 2 para el logo y una de tamaño 8 para el texto  --> 
-            <div class="col-sm-2 ">
-                <img src="images/logo.png" alt="Icono Página no cargado" width="50" height="60" class="d-flex align-content-center justify-content-center">
-            </div>
-            <div class="col-sm-8 ">
-                <h1 class="textoCabecera d-flex align-items-center justify-content-center ">Crimes Of Chicago</h1>
-            </div>
-            <div class="col-sm-2">
-              <a href="https://github.com/JorgeSierra22/Cloud-BigData.git"><img src="images/GitHub-logo.png" alt="Icono Página no cargado" width="50" height="60"
-                class="d-flex align-content-center justify-content-center">
-              </a>
-            </div>
+  <header class="container fondocabecera justify-content-center">  <!-- Aqui comienza el contenedor que contiene el logo y el texto de la cabecera  -->
+    <div class="row ">  <!--  Esta formado por 1 fila que contiene 1 columna de tamaño 2 para el logo y una de tamaño 8 para el texto  --> 
+        <div class="col-sm-2 ">
+            <img src="images/logo.png" alt="Icono Página no cargado" width="50" height="60" class="d-flex align-content-center justify-content-center">
         </div>
-    </header>
+        <div class="col-sm-8 ">
+            <h1 class="textoCabecera d-flex align-items-center justify-content-center ">Crimes Of Chicago</h1>
+        </div>
+        <div class="col-sm-1">
+          <h6 class="letrasFooter  align-items-center justify-content-center "> Enlace al repositorio -------></h6>
+        </div>
+        <div class="col-sm-1">
+          <a href="https://github.com/JorgeSierra22/Cloud-BigData.git"><img src="images/GitHub-logo.png" alt="Icono Página no cargado" width="50" height="60"
+            class="d-flex align-content-center justify-content-center">
+          </a>
+        </div>
+    </div>
+</header>
     <nav class="container justify-content-center"> <!-- Contenedor encargado de almacenar la barra de Herramientas -->
       <div class="row barraDeHerramientas"> <!-- formado por 1 fila que contiene los 4 botones para moverte por la pagina -->
         <div class="col-md-3  text-center bordecolumnaCabecera"><a href=./index.html  target="_self" class="btn btn-lg botoncabecera" ><h5>Descripcion del Proyecto</h5></a></div> 
@@ -105,7 +108,7 @@
           </div>
             <div class="card-body">
               <p class="card-text">Como una de los aspectos más complicados a los que nos hemos tenido que enfrentar cuando realizamos el proyecto, ha sido la ejecución de nuestros scripts en el Cloud, esto se debe a que no éramos conscientes de que la ruta del archivo de entrada debía de ser modificado para que el Cloud lo pudiera leer apropiadamente y no conseguimos hasta tarde y gracias a la ayuda del profesor descifrar el porqué todos los trabajos que estábamos creando daban error.</p>
-              <p class="card-text">Debido a este motivo, tuvimos que crear nuevos códigos para que el usuario pudiera poner la ruta del archivo tanto de entrada como de salida, es decir, tuvimos que utilizar el módulo sys de Python y reemplazar en las instrucciones en las que leíamos y escribíamos en los csv la ruta en local por sys.argv[1] y sys.argv[2] respectivamente para que la instrucción ___ no diera error.</p>
+              <p class="card-text">Debido a este motivo, tuvimos que crear nuevos códigos para que el usuario pudiera poner la ruta del archivo tanto de entrada como de salida, es decir, tuvimos que utilizar el módulo sys de Python y reemplazar en las instrucciones en las que leíamos y escribíamos en los csv la ruta en local por sys.argv[1] y sys.argv[2] respectivamente para que la instrucción: " BUCKET=gs://$GOOGLE_CLOUD_PROJECT gcloud dataproc jobs submit pyspark --cluster example-cluster --region=europe-west6 $BUCKET/typeOfCrimesCloud.py -- $BUCKET/Crimes-_2001_to_Present.csv $BUCKET/most_repeated_crime" no diera error.</p>
             </div>
         </div>
     </div>
@@ -177,20 +180,13 @@
         <div class="col d-flex">
           <ul class="list-unstyled">
             <li><h6 class="font-weight-bold">Sobre Nosotros</h6></li> 
-            <li><a href=#  target="_blank" class="text-decoration-none letrasFooter" >Guias de Viajes</a></li> 
-            <li><a href=#  target="_blank" class="text-decoration-none letrasFooter">Preguntas</a></li> 
-            <li><a href=#  target="_blank" class="text-decoration-none letrasFooter">Afiliados</a></li> 
+            <li><a href=https://github.com/Marcosgr994  target="_blank" class="text-decoration-none letrasFooter">Marcos Gago Rivas</a></li> 
+            <li><a href=https://github.com/JorgeSierra22  target="_blank" class="text-decoration-none letrasFooter">Jorge Sierra Alonso</a></li> 
+            <li><a href=https://github.com/PabloCG13  target="_blank" class="text-decoration-none letrasFooter">Pablo Agustín Chicharro Gómez
+            </a></li> 
           </ul>
           
       </div>
-      <div class="col d-flex">
-        <ul class="list-unstyled">
-          <li><h6 class="font-weight-bold">Redes Sociales</h6></li> 
-          <li><a href=https://www.instagram.com  target="_blank" class="text-decoration-none letrasFooter">Instagram</a></li> 
-          <li><a href=https://www.facebook.com target="_blank" class="text-decoration-none letrasFooter">Facebook</a></li> 
-          <li><a href=https://twitter.com target="_blank" class="text-decoration-none letrasFooter">Twitter</a></li> 
-        </ul>
-        </div>
         </div>
       </div>
    </footer>
